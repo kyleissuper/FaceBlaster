@@ -24,7 +24,7 @@ F = FaceBlaster()
 contacts = F.get_userids_from_post()
 for contact in contacts:
     print F.send_message(
-        "user1234",     # exact Facebook username
+        contact,        # exact Facebook username
         "Hello!"        # message to send
         )               # returns success/failure message
 F.close()
