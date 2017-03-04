@@ -30,6 +30,23 @@ for contact in contacts:
 F.close()
 ```
 
+## Customized messages
+
+Supports templating with `{f_name}`. Example:
+
+```python
+from FaceBlaster import FaceBlaster
+
+F = FaceBlaster()
+contacts = F.get_userids_from_post()
+for contact in contacts:
+    print F.send_message(
+        contact,               # exact Facebook username
+        "Hello, {f_name}!"     # message to send
+        )                      # returns success/failure message
+F.close()
+```
+
 ## Can I run this in the background?
 
 No, this is just meant to make life a little bit easier :)
