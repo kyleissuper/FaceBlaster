@@ -18,7 +18,7 @@ Requires selenium (`pip install selenium`), and driver may need some configurati
 I know that some people send messages to all the people who react to their FB posts, so there's a built-in method for that. Otherwise, you can just iterate through any list of usernames that you have.
 
 ```python
-from WhatsBlaster import WhatsBlaster
+from FaceBlaster import FaceBlaster
 
 F = FaceBlaster()
 contacts = F.get_userids_from_post()
